@@ -23,8 +23,8 @@ class DataBase:
             raise ConnectionError(f"Failed to connect to MongoDB: {e}")
 
     def _load_defect_data(self) -> List[Dict]:
-        defects = list(self.client['defect_cause'].find())
-        incidents = list(self.client['servicenow_incidents'].find())
+        defects = list(self.client['defect_cause'].find().limit(100))
+        incidents = list(self.client['servicenow_incidents'].find().limit(100))
         for inc in incidents:
             inc['bug_id'] = inc.get('incident_id', 'UNKNOWN')
             inc['Defect Summary'] = inc.get('short_description', 'No summary')
@@ -54,7 +54,7 @@ class DataBase:
 
 class FAISS:
     def __init__(self):
-        self.encoder = SentenceTransformer("all-MiniLM-L6-v2")
+        self.encoder = SentenceTransformer("paraphrase-albert-small-v2")  # ~60MB
         self.defect_embeddings = None
         self.defect_data = None
 
@@ -352,7 +352,7 @@ Owner: {defect.get('owner', 'Unassigned')}"""
             'timestamp': datetime.now()
         })
 
-        if len(self.context_window) > 5:
+        if len(self.context_window) > 2:
             self.context_window.pop(0)
 
         return self._format_response(answer)
