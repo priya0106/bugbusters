@@ -1,0 +1,24 @@
+{
+    "defectSummary": "Missing policy details in Kafka response for Policy Lookup Service.",
+    "rootCause": {
+        "description": "The issue occured because missing field mapping between MongoDB document schema Kafka producer’s payload format. The policy number field not included in the Kafka message, causing downstream systems to failed when try to retrieve policy details.",
+        "analysis": {
+            "logs": "Error log from Kafka consumer: 'Policy number not found in the payload'.",
+            "images": [
+                {
+                    "name": "ErrorScreenshot.png",
+                    "url": "https://example.com/images/ErrorScreenshot.png"
+                }
+            ],
+            "xml_files": [
+                {
+                    "name": "KafkaPayload.xml",
+                    "content": "<Policy><ID>12345</ID><Details>...</Details></Policy>"
+                }
+            ]
+        }
+    },
+    "solution": "The MongoDB query updated to include policy number in the query. Kafka producer logic modified so it maps the policy number field properly. Then tested the changes in QA environment with multiple policy scenario. We also tried different cases and fixed bugs on the way. After that, we deploy the fix in production enviorment, checking logs before hand for any issue. There was no issue found and now data flow fine, but we continue monitor closely.",
+    "owner": "Jacky",
+    "fixedDate": "2025-01-05"
+}

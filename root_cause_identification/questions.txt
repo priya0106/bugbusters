@@ -1,0 +1,32 @@
+# Owner Queries
+who is the owner of 'Incorrect Data Mapping in User Profile Service'
+who owns 'Incorrekt Data Maping in User Profle Service'
+tell me the owner of "Missing policy details in Kafka response for ECAM Service"
+owner of 'Misng policy detals in Kafka respons for ECAM Servic'
+
+# Root Cause Queries
+what is the root cause of 'Authentication Failure in Login Service'
+tell me why 'Message Duplication in Notification Service' occurred
+what caused the 'Incorect Data Mapin in User Profle Service' issue
+explain root cause of 'Misng policy detals in Kafka respons for ECAM Servic'
+
+# Bug ID Queries
+SCRUM-13
+scrum-8
+what is the details of SCRUM-11
+show me SCRUM-9
+
+# Solution Queries
+how was 'Authentication Failure in Login Service' fixed
+what is the solution for 'Message Duplication in Notification Service'
+tell me how 'Incorect Data Mapin in User Profle Service' was resolved
+solution for 'Misng policy detals in Kafka respons for ECAM Servic'
+
+# Generic Queries
+show all bugs owned by Nishanth
+list Nishanth's defects
+what are the authentication related issues
+show all kafka related problems
+
+
+

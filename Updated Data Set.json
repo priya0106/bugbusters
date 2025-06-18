@@ -1,0 +1,212 @@
+[
+    {
+        "defectSummary": "File Upload Failure",
+        "rootCause": "Misconfigured permissions",
+        "solution": "Increased timeout settings",
+        "owner": "Alice",
+        "fixedDate": "2024-02-23"
+    },
+    {
+        "defectSummary": "UI Button Not Working",
+        "rootCause": "JavaScript error onClick",
+        "solution": "Corrected serialization logic",
+        "owner": "David",
+        "fixedDate": "2024-09-14"
+    },
+    {
+        "defectSummary": "Unexpected Server Crash",
+        "rootCause": "Serialization error",
+        "solution": "Implemented resource cleanup",
+        "owner": "Charlie",
+        "fixedDate": "2024-06-08"
+    },
+    {
+        "defectSummary": "Service Timeout Issue",
+        "rootCause": "Race condition",
+        "solution": "Adjusted file upload limit",
+        "owner": "Heidi",
+        "fixedDate": "2024-12-23"
+    },
+    {
+        "defectSummary": "UI Button Not Working",
+        "rootCause": "Unreleased resources",
+        "solution": "Optimized database query",
+        "owner": "Heidi",
+        "fixedDate": "2024-12-20"
+    },
+    {
+        "defectSummary": "Unauthorized Access Error",
+        "rootCause": "File size exceeds limit",
+        "solution": "Implemented locking mechanism",
+        "owner": "Ivan",
+        "fixedDate": "2024-04-06"
+    },
+    {
+        "defectSummary": "Data Synchronization Failure",
+        "rootCause": "Misconfigured permissions",
+        "solution": "Implemented resource cleanup",
+        "owner": "Heidi",
+        "fixedDate": "2024-02-14"
+    },
+    {
+        "defectSummary": "Data Synchronization Failure",
+        "rootCause": "Misconfigured permissions",
+        "solution": "Fixed UI event binding",
+        "owner": "Eve",
+        "fixedDate": "2024-12-06"
+    },
+    {
+        "defectSummary": "Unexpected Server Crash",
+        "rootCause": "JavaScript error onClick",
+        "solution": "Implemented resource cleanup",
+        "owner": "David",
+        "fixedDate": "2024-05-13"
+    },
+    {
+        "defectSummary": "File Upload Failure",
+        "rootCause": "JavaScript error onClick",
+        "solution": "Fixed UI event binding",
+        "owner": "Judy",
+        "fixedDate": "2024-09-14"
+    },
+    {
+        "defectSummary": "Null Pointer Exception in API",
+        "rootCause": "File size exceeds limit",
+        "solution": "Fixed UI event binding",
+        "owner": "David",
+        "fixedDate": "2024-09-23"
+    },
+    {
+        "defectSummary": "Slow Response from Database",
+        "rootCause": "Unreleased resources",
+        "solution": "Updated user roles",
+        "owner": "Heidi",
+        "fixedDate": "2024-07-28"
+    },
+    {
+        "defectSummary": "Service Timeout Issue",
+        "rootCause": "JavaScript error onClick",
+        "solution": "Implemented locking mechanism",
+        "owner": "Heidi",
+        "fixedDate": "2024-09-18"
+    },
+    {
+        "defectSummary": "Data Synchronization Failure",
+        "rootCause": "High network latency",
+        "solution": "Implemented locking mechanism",
+        "owner": "David",
+        "fixedDate": "2024-03-21"
+    },
+    {
+        "defectSummary": "Incorrect Data Format in API Response",
+        "rootCause": "High network latency",
+        "solution": "Added null checks",
+        "owner": "David",
+        "fixedDate": "2024-04-22"
+    },
+    {
+        "defectSummary": "Incorrect Data Format in API Response",
+        "rootCause": "Missing null check",
+        "solution": "Increased timeout settings",
+        "owner": "Alice",
+        "fixedDate": "2024-04-08"
+    },
+    {
+        "defectSummary": "Slow Response from Database",
+        "rootCause": "Misconfigured permissions",
+        "solution": "Corrected serialization logic",
+        "owner": "Bob",
+        "fixedDate": "2024-01-26"
+    },
+    {
+        "defectSummary": "Service Timeout Issue",
+        "rootCause": "Unreleased resources",
+        "solution": "Added null checks",
+        "owner": "Ivan",
+        "fixedDate": "2024-02-16"
+    },
+    {
+        "defectSummary": "File Upload Failure",
+        "rootCause": "Missing null check",
+        "solution": "Implemented locking mechanism",
+        "owner": "Eve",
+        "fixedDate": "2024-06-08"
+    },
+    {
+        "defectSummary": "Memory Leak in Application",
+        "rootCause": "Unhandled exception",
+        "solution": "Adjusted file upload limit",
+        "owner": "Charlie",
+        "fixedDate": "2024-08-29"
+    },
+    {
+        "defectSummary": "Incorrect Data Format in API Response",
+        "rootCause": "Improper indexing",
+        "solution": "Implemented locking mechanism",
+        "owner": "Charlie",
+        "fixedDate": "2024-08-18"
+    },
+    {
+        "defectSummary": "Memory Leak in Application",
+        "rootCause": "Unreleased resources",
+        "solution": "Added null checks",
+        "owner": "Frank",
+        "fixedDate": "2024-05-12"
+    },
+    {
+        "defectSummary": "Null Pointer Exception in API",
+        "rootCause": "Unreleased resources",
+        "solution": "Implemented locking mechanism",
+        "owner": "Alice",
+        "fixedDate": "2024-07-21"
+    },
+    {
+        "defectSummary": "Unauthorized Access Error",
+        "rootCause": "Serialization error",
+        "solution": "Corrected serialization logic",
+        "owner": "Eve",
+        "fixedDate": "2024-02-08"
+    },
+    {
+        "defectSummary": "Slow Response from Database",
+        "rootCause": "Race condition",
+        "solution": "Updated user roles",
+        "owner": "Bob",
+        "fixedDate": "2024-12-16"
+    },
+    {
+        "defectSummary": "Unexpected Server Crash",
+        "rootCause": "High network latency",
+        "solution": "Adjusted file upload limit",
+        "owner": "Grace",
+        "fixedDate": "2024-10-30"
+    },
+    {
+        "defectSummary": "Unauthorized Access Error",
+        "rootCause": "Missing null check",
+        "solution": "Adjusted file upload limit",
+        "owner": "Judy",
+        "fixedDate": "2024-04-03"
+    },
+    {
+        "defectSummary": "UI Button Not Working",
+        "rootCause": "High network latency",
+        "solution": "Implemented locking mechanism",
+        "owner": "David",
+        "fixedDate": "2024-06-22"
+    },
+    {
+        "defectSummary": "Null Pointer Exception in API",
+        "rootCause": "Missing null check",
+        "solution": "Optimized database query",
+        "owner": "Bob",
+        "fixedDate": "2024-10-14"
+    },
+    {
+        "defectSummary": "Memory Leak in Application",
+        "rootCause": "JavaScript error onClick",
+        "solution": "Updated user roles",
+        "owner": "Judy",
+        "fixedDate": "2024-08-14"
+    }
+]
