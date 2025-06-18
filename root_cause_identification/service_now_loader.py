@@ -11,19 +11,19 @@ mongo_client =  MongoClient(f"mongodb+srv://{os.environ['USER_NAME']}:{os.enviro
 db = mongo_client[os.environ['DB_NAME']]
 collection = db['servicenow_incidents']
 
-def get_servicenow_incidents():
-    url = f"{os.environ['SERVICENOW_URL']}/api/now/table/incident?sysparm_query=caller_id.user_name=TestUser&sysparm_limit=100"
-    auth = (os.environ['SERVICENOW_USER'], os.environ['SERVICENOW_PASS'])
-    headers = {"Accept": "application/json"}
+# def get_servicenow_incidents():
+#     url = f"{os.environ['SERVICENOW_URL']}/api/now/table/incident?sysparm_query=caller_id.user_name=TestUser&sysparm_limit=100"
+#     auth = (os.environ['SERVICENOW_USER'], os.environ['SERVICENOW_PASS'])
+#     headers = {"Accept": "application/json"}
 
-    response = requests.get(url, auth=auth, headers=headers)
-    response.raise_for_status()
+#     response = requests.get(url, auth=auth, headers=headers)
+#     response.raise_for_status()
 
-    result = response.json()
-    if isinstance(result, dict) and "result" in result:
-        return result["result"]
-    else:
-        raise ValueError("Unexpected response format from ServiceNow")
+#     result = response.json()
+#     if isinstance(result, dict) and "result" in result:
+#         return result["result"]
+#     else:
+#         raise ValueError("Unexpected response format from ServiceNow")
 
 def transform_incident_data(raw_incident):
     # Transform the raw data to a consistent MongoDB schema
@@ -41,7 +41,8 @@ def transform_incident_data(raw_incident):
 def load_data_from_servicenow():
     try:
         print("Fetching incidents from ServiceNow...")
-        incidents = get_servicenow_incidents()
+        # incidents = get_servicenow_incidents()
+        incidents = []
         print(f"Found {len(incidents)} incidents.")
 
         inserted_count = 0

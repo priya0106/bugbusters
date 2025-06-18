@@ -14,22 +14,22 @@ mongo_client =  MongoClient(f"mongodb+srv://{os.environ['USER_NAME']}:{os.enviro
 db = mongo_client[os.environ['DB_NAME']]
 collection = db['defect_cause']
 
-def get_done_bugs():
-    url = f"{os.environ['JIRA_URL']}/rest/api/3/search"
-    headers = {"Content-Type": "application/json"}
-    auth = (os.environ['JIRA_EMAIL'], os.environ['JIRA_API_TOKEN'])
+# def get_done_bugs():
+#     url = f"{os.environ['JIRA_URL']}/rest/api/3/search"
+#     headers = {"Content-Type": "application/json"}
+#     auth = (os.environ['JIRA_EMAIL'], os.environ['JIRA_API_TOKEN'])
 
-    payload = {
-        "jql": JQL_QUERY,
-        "fields": ["summary", "attachment", "assignee", "description", "comment"],
-        "maxResults": 1000
-    }
+#     payload = {
+#         "jql": JQL_QUERY,
+#         "fields": ["summary", "attachment", "assignee", "description", "comment"],
+#         "maxResults": 1000
+#     }
 
-    response = requests.post(url, json=payload, headers=headers, auth=auth)
+#     response = requests.post(url, json=payload, headers=headers, auth=auth)
 
 
-    response.raise_for_status()
-    return response.json()["issues"]
+#     response.raise_for_status()
+#     return response.json()["issues"]
 
 def parse_rca_to_json(rca_response):
     text = rca_response.get("text", "")
@@ -291,7 +291,8 @@ def create_basic_rca(issue_key: str, bug_url: str, assignee_name: str, bug_summa
     }
 
 def load_data_from_jira():
-    bugs = get_done_bugs()
+    # bugs = get_done_bugs()
+    bugs = []
     print(f"Found {len(bugs)} bugs with status 'Done'.")
 
     for bug in bugs:
